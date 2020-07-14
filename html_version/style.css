@@ -1,0 +1,260 @@
+body {
+    background-color: #eee;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.centers{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+.middles{
+    vertical-align: middle;
+}
+.header{
+    background: #222;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.foother {
+    background-color: #333;
+    width: 93%;
+    margin: auto;
+    padding: 10px;
+}
+
+.clear{
+	clear: both;
+}
+.navbar {
+    background-color: #333;
+    width: 95%;
+    margin: auto;
+    padding: 5px;
+}
+
+.navbar form {
+    float: left;
+}
+.btn-reset{
+    float: left;
+    background: #333;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    /*border-left: none;*/
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+#jml_alat button {
+    float: left;
+    background: #333;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 0px 3px 3px 0px;
+}
+.label{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 17px;
+}
+#jml_alat input[type=number] {
+    font-size: 17px;
+    float: left;
+    color: white;
+    background: #333;
+    border-radius: 3px 0px 0px 3px;
+    padding: 5px;
+    border: 1px solid grey;
+    width: 200px;
+	display: block;
+}
+
+
+.foother label{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 17px;
+    /*margin: 10px 0px 0px 0px;*/
+}
+.foother input[type=number] {
+    font-size: 14px;
+    float: left;
+    color: white;
+    background: #333;
+    border-radius: 3px 0px 0px 3px;
+    padding: 5px;
+    border: 1px solid grey;
+    width: 150px;
+	display: block;
+    /*margin: 10px 0px 0px 0px;*/
+}
+.foother button {
+	display: block;
+    float: left;
+    background: #333;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 0px 3px 3px 0px;
+}
+.btn {
+    margin: 3px;
+    display: block;
+    background: #333;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 3px;
+}
+.btn:hover{
+    background-color: #555;
+}
+
+.container2{
+    width: 93%;
+    margin: auto; 
+    background-color: #fdfdfd;
+    font-size: 14px;
+	padding: 10px;
+}
+
+.container{
+    width: 90%;
+    padding: 20px;
+    /*max-width: 700px;*/
+    margin: auto; 
+    background-color: #fdfdfd;
+    /*padding-bottom: 20px;*/
+    font-size: 14px;
+	box-shadow: inset 0px 27px 10px -20px rgba(0,0,0,0.31);
+}
+
+.inputan{
+	margin: 5px;
+	float: left;
+	width: 255px;
+	border: 1px solid grey;
+	padding: 8px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 4px 2px  rgba(0,0,0,0.3);
+}
+.inputan input{
+  width: 100%;
+  padding: 5px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.inputan h1{
+    text-align: center;
+    font-size: 20px;
+}
+.form-group{
+    margin: auto;
+    padding: 5px;
+    vertical-align: middle;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    line-height: 20px;
+    margin: auto;
+}
+table td {
+ 	border: 1px solid #aaa;
+    padding: 3px;
+    vertical-align: midle;
+}
+.title {
+    font-size: 15px;
+    background-color: #333;
+    color: white;
+}
+
+.title:hover {
+    font-size: 15px;
+    background-color: #333;
+    color: white;
+}
+
+table tbody tr:nth-child(even){
+    background-color: #ccc;
+}
+
+table tbody tr:nth-child(even):hover, table tbody tr:hover{
+    background: #444;
+    color: #fff;
+}
+
+.foother button:hover, #jml_alat button:hover{
+    background-color: #555;
+}
+.inputan input:hover,.inputan:hover{
+    background-color: #f7f7f7;
+    transition-duration: 0.3s;
+}
+.foother input[type=number]:hover,#jml_alat input[type=number]:hover {
+    background: #444;
+}
+
+.quoteCon{
+    /*margin-top: 30px;*/
+    width: 90%;
+    max-width: 700px;
+    background-color: white;
+    margin: auto;
+    padding: 10px 0px 30px 10px;
+}
+.quoteConSub{
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    margin-top: 2px;
+    text-align: justify;
+}
+
+#qotesTex{
+    margin-top: 50px;
+}
+.quotesJudul{
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    float: left;
+    display: block;
+    margin: 3px;
+}
+.quotes{
+    text-align: center;
+    font-size: 30px;
+    margin: 10;
+}
+
+.redtext{color: #f44336;}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Perhitungan tarif Listrik</title>
+	<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAW5QTFRFAAAA////0tvZx9LPzNbT+Pn5ytTR/////f7+6+/u3OPh/f7+z9nWk6iiZ4V99vj3qbq1q7y39/n4////ssG9q7u3////zdfUz9jW////kaeh6+/uZoR82+Lhkaagrr65qru29/j4VnduU3VsMltPMFlNL1hNMFhNMlpPU3VrYoF4NFxRMVpOM1tQTnBnmq2oucbDd5GKPGJXQGZbZYN7zdfUr7+7TnFnTG9m1d7b////+fr6y9XSbYqCVHZsRGlf3uXjma2oYH929vj33+Xj8/X119/dQWZcQmddo7Ww9/j4/v7+gJmSrr654ObkQ2heVXZt3+XkpbeyYYB4d5KKobOu4OblWHlw8PPydpGJobSvwMzJR2thfpeQ09zacY2ForSv4eflQGVb1Nza/Pz8zNbTc46HT3Jol6um4ujmuMbC8vX08/b1k6iiNV1SRmpgkqeit8XCZoR7NVxSZ4V8q7u3g5yVRWpgL1hMTG9lP4p8BAAAACJ0Uk5TAAAAAAAAAAc1cJIrnef9Q9fXQyzW1gadnTXmb/yR5tbXQ85/LV8AAAABYktHRAH/Ai3eAAAACXBIWXMAAArwAAAK8AFCrDSYAAAA7UlEQVQY02NgYGBkZOfg5OLi5GBnZGQAAkYmbh5ePiUlPl4ebiagCCMzv4Cyiqqauoa6pqAQCyMDq7CIlraOrp6+gaGRsagwK4OYuImpmbmFpZWVtY2tnYQYg6SUvYOVo5OzlYurlZu7lCSDtIyHi5Wnlpe3j6+Vn7+MNINsgH+gVVCws3dIqFWYfYAsSACoIjzCOzIKIgDU4mAVHRMbF59glWgP1CIplZRslZKalp6UYZUZIyfJICZhF5yVbZWTm5dfUFgkLgZ0mGhScUlpWbmuRkWlPNBhjCxCgsqq6hXqqhrKCopsjJieQ/c+ADujLMv2KQryAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTAyLTAxVDAxOjI0OjE2KzAwOjAw9SsECAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMC0wMi0wMVQwMToyNDoxNiswMDowMIR2vLQAAABGdEVYdHNvZnR3YXJlAEltYWdlTWFnaWNrIDYuNy44LTkgMjAxNC0wNS0xMiBRMTYgaHR0cDovL3d3dy5pbWFnZW1hZ2ljay5vcmfchu0AAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGHRFWHRUaHVtYjo6SW1hZ2U6OmhlaWdodAAxOTIPAHKFAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OldpZHRoADE5MtOsIQgAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTU4MDUyMDI1NlX6H94AAAAPdEVYdFRodW1iOjpTaXplADBCQpSiPuwAAABWdEVYdFRodW1iOjpVUkkAZmlsZTovLy9tbnRsb2cvZmF2aWNvbnMvMjAyMC0wMi0wMS9kNzBlMmI2ZGFkYzZiYTlhZWNlY2ViNWU5YjEzNTBkMC5pY28ucG5ncxlsbQAAAABJRU5ErkJggg==" sizes="16x16" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">Perhitungan tarif Listrik</div>
+	<div class="clear"></div>
+	<div class="navbar">
+		<form action="" method="post" id="jml_alat">
+			<label for="j_alat" class="label">Jumlah Alat: </label>
+			<input type="number" value="0" id="j_alat" maxlength="2">
+			<button type="reset" id="reset_jml" onclick="resetJmlAlat();">Reset</button>
+		</form>
+		<span class="label" id="alertNamaJml" style="display: none;"></span>
+		<div class="clear"></div>
+	</div>
+	<div id="mainDisplay">
+		<form>
+			<div class="container" id="kolomInputan"></div>
+		</form>
+		<div class="clear"></div>
+		<div class="foother">
+		<form>
+			<label for="tarif" class="label">Tarif: </label>
+			<input type="number" id="tarif" placeholder="Tarif listrik perKWh Rp.">
+			<label for="pemakaian" class="label">Pemakaian: </label>
+			<input type="number" id="pemakaian" placeholder="Listrik Dalam Berapa hari">
+		</form>
+		<button type="button" onclick="hitung()">Submit</button>
+		<button type="button" onclick="resetJmlAlat()">Reset</button>
+		<span class="label" id="alertNamaPem" style="display: none;"></span>
+		<div class="clear"></div>
+		</div>
+	</div>
+	<div id="hasilDisplay">
+	</div>
+	<div class="clear"></div>
+	<div id="kata_kata"></div>
+	<script language="JavaScript" src="script.js"></script>
+	<script language="JavaScript" src="kata.js"></script>
+	<p style="text-align: center; margin: 50px;" >&copy; 2019 All Rights Reserved. Made with by <b>Isep Lutpi Nur</b></p>
+</body>
+</html>
